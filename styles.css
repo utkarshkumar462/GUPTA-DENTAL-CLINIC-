@@ -297,3 +297,89 @@ footer p {
         margin-bottom: 20px;
     }
 }
+/* Working Hours Section (Fixed Spacing from Footer) */
+/* Working Hours Section (Fixed from Footer) */
+.working-hours {
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+    margin-bottom: 50px; /* Adds space from footer */
+}
+
+/* Responsive Table Wrapper */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling on smaller screens */
+}
+
+/* Working Hours Table */
+/* Working Hours Section (Fixed from Footer) */
+.working-hours {
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+    margin-bottom: 50px; /* Adds space from footer */
+}
+
+/* Responsive Table Wrapper */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling on smaller screens */
+    display: flex;
+    justify-content: center;
+}
+
+/* Working Hours Table */
+.working-hours table {
+    width: 100%;
+    max-width: 600px;
+    min-width: 400px; /* Prevents excessive shrinking */
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
+    /* Outer Red Border */
+    border: 3px solid red;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table Header and Cell Styling */
+.working-hours th, 
+.working-hours td {
+    padding: 15px;
+    border: 1px solid #ddd; /* Light grey border inside */
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Header Background */
+.working-hours th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+/* Alternate Row Background */
+.working-hours tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .table-responsive {
+        justify-content: flex-start; /* Allows scrolling on smaller screens */
+    }
+
+    .working-hours table {
+        width: 600px; /* Ensures scrolling instead of text breaking */
+    }
+
+    .working-hours th, 
+    .working-hours td {
+        padding: 10px;
+        font-size: 16px; /* Adjusts for readability */
+    }
+}
+
+
