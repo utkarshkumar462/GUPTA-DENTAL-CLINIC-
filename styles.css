@@ -516,5 +516,12 @@ footer p {
         font-size: 12px;
     }
 }
+.service {
+    transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
 
 
