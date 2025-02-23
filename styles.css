@@ -383,3 +383,58 @@ footer p {
 }
 
 
+.container {
+    display: flex;
+    gap: 10px; /* दोनों आइटम के बीच थोड़ा गैप */
+    justify-content: center; /* सेंटर में लाने के लिए */
+    align-items: center; /* वर्टिकली सेंटर */
+    padding: 5px;
+    flex-wrap: wrap; /* Responsive ke liye wrap karega */
+}
+
+/* जब स्क्रीन 600px से छोटी होगी तो ऊपर-नीचे (stack) आ जाएंगे */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        gap: 15px; /* थोड़ा ज्यादा गैप ताकि आइटम ठीक से दिखें */
+    }
+}
+
+/* yaha se animation  */
+.animated-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect */
+.animated-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+}
+
+/* Pulsing Effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    }
+    50% {
+        transform: scale(1.08);
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    }
+}
+
+.animated-button {
+    animation: pulse 2s infinite;
+}
+
