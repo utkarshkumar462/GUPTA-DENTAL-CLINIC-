@@ -438,3 +438,83 @@ footer p {
     animation: pulse 2s infinite;
 }
 
+/* yaha Se Review ka----------------------------------------------------------------- */
+/* Google Reviews Section */
+.reviews {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+/* Card Styling */
+.reviews .card {
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+    max-width: 250px; /* Reduce card width */
+    margin: auto;
+}
+
+.reviews .card:hover {
+    transform: scale(1.05);
+}
+
+/* Card Image */
+.reviews .card img {
+    height: 140px; /* Reduce image size */
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Review Text */
+.reviews .card-body {
+    text-align: center;
+    padding: 15px;
+}
+
+/* Star Rating */
+.reviews .card-body p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff9800; /* Golden color for stars */
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reviews .col-md-3 {
+        width: 50%;
+    }
+
+    .reviews .card {
+        max-width: 200px; /* Adjust card size for small screens */
+    }
+
+    .reviews .card img {
+        height: 120px;
+    }
+
+    .reviews .card-body p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .reviews .col-md-3 {
+        width: 100%;
+    }
+
+    .reviews .card {
+        max-width: 250px;
+    }
+
+    .reviews .card img {
+        height: 100px;
+    }
+
+    .reviews .card-body p {
+        font-size: 12px;
+    }
+}
+
+
